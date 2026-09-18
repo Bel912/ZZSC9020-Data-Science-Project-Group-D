@@ -1,0 +1,10 @@
+Metric,Value
+Modelling start,2025-08-01 00:00:00
+Modelling end,2026-08-31 23:30:00
+Rows,19008
+Duplicate datetimes,0
+Missing 30-minute intervals,0
+Missing PV,1
+Missing demand,0
+Weather match rate,99.7%
+Solar exposure match rate,100.0%

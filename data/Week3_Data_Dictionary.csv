@@ -1,0 +1,36 @@
+Variable,Description,Unit / Format,Source
+DATETIME,Half-hour interval ending timestamp,datetime,AEMO PV and demand
+ROOFTOP_PV_MW,NSW1 measured rooftop PV power,MW,AEMO Rooftop PV
+PV_QUALITY_INDICATOR,AEMO quality indicator for PV measurement,ratio,AEMO Rooftop PV
+OPERATIONAL_DEMAND_MW,NSW1 operational demand,MW,AEMO Operational Demand
+OPERATIONAL_DEMAND_ADJUSTMENT,Operational demand adjustment,MW,AEMO Operational Demand
+WDR_ESTIMATE,Wholesale demand response estimate,MW,AEMO Operational Demand
+DATE,Calendar date used for daily weather join,date,Derived
+MIN_TEMP_C,Daily minimum temperature at Sydney Airport,°C,BoM
+MAX_TEMP_C,Daily maximum temperature at Sydney Airport,°C,BoM
+RAINFALL_MM,Daily rainfall at Sydney Airport,mm,BoM
+SUNSHINE_HOURS,Daily sunshine duration,hours,BoM
+RH_9AM_PCT,9am relative humidity,%,BoM
+CLOUD_9AM_OKTAS,9am cloud amount,oktas,BoM
+RH_3PM_PCT,3pm relative humidity,%,BoM
+CLOUD_3PM_OKTAS,3pm cloud amount,oktas,BoM
+SOLAR_EXPOSURE_MJ_M2,Daily global solar exposure at Sydney Airport North,MJ/m²,BoM
+YEAR,Calendar year,year,Derived
+MONTH,Calendar month number,1-12,Derived
+MONTH_NAME,Calendar month name,text,Derived
+QUARTER,Calendar quarter,text,Derived
+DAY_OF_WEEK,Day name,text,Derived
+WEEKEND_FLAG,"1 for Saturday/Sunday, otherwise 0",binary,Derived
+HOUR,Hour from interval timestamp,0-23,Derived
+MINUTE,Minute from interval timestamp,0/30,Derived
+HALF_HOUR_SLOT,Half-hour time label,HH:MM,Derived
+SEASON,Australian meteorological season,text,Derived
+PV_LAG_1,PV one interval earlier,MW,Derived
+DEMAND_LAG_1,Demand one interval earlier,MW,Derived
+PV_LAG_2,PV two intervals earlier,MW,Derived
+DEMAND_LAG_2,Demand two intervals earlier,MW,Derived
+PV_LAG_4,PV four intervals earlier,MW,Derived
+DEMAND_LAG_4,Demand four intervals earlier,MW,Derived
+DELTA_PV_MW,Change in PV from prior interval,MW,Derived
+DELTA_DEMAND_MW,Change in demand from prior interval,MW,Derived
+PV_RAMP_DIRECTION,Direction of interval PV change,text,Derived
