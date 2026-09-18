@@ -1,0 +1,29 @@
+NSW1 JULY 2026 CLEANING AND JOIN SUMMARY
+
+Rooftop PV source data rows: 14,880
+Operational demand source data rows: 7,440
+PV control/header/footer rows excluded: 2
+Demand control/header/footer rows excluded: 2
+
+Filters applied:
+- REGIONID = NSW1 for both datasets
+- TYPE = MEASUREMENT for rooftop PV
+- Interval-ending window: after 2026-07-01 00:00 through 2026-08-01 00:00 inclusive
+- Duplicate timestamps resolved by keeping the record with latest LASTCHANGED
+
+PV NSW measurement records after filtering: 1,488
+Demand NSW records after filtering: 1,488
+PV duplicate timestamps removed: 0
+Demand duplicate timestamps removed: 0
+Joined records: 1,488
+Expected half-hour intervals: 1,488
+PV timestamps without demand match: 0
+Demand timestamps without PV match: 0
+Non-30-minute gaps after join: 0
+Missing PV power values: 0
+Missing PV quality values: 0
+Missing operational demand values: 0
+Missing demand adjustment values: 0
+Missing WDR estimate values: 0
+First interval: 2026-07-01 00:30:00
+Last interval: 2026-08-01 00:00:00
