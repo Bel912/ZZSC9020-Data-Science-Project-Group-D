@@ -1,4 +1,4 @@
-# Welcome to ZZSC9020 GitHub repository for group [GROUP-NAME]
+# Welcome to ZZSC9020 GitHub repository for group D.
 
 This GitHub repository is the main point of access for students and lecturers of the ZZSC9020 capstone course. 
 
@@ -9,15 +9,13 @@ Complete the information below regarding your group.
 ## Group and project information
 
 ### Group members and zIDs
-- Member 1 (zID1) - Group leader
-- Member 2 (zID2) - role
-- Member 3 (zID3) - role
-- Member 4 (zID4) - role
-- Member 5 (zID5) - role
+- Bel Zhou (z5537223) - Data Engineer / Researcher
+- Anders Appel (z5568978) - Data Engineer / Analyst
+- William Sivieng (z3023671) - Project Lead
 
 ### Brief project description
 
-Describe your project in one paragraph.
+Quantify the impact of rooftop solar generation on grid demand across different times of the day and under varying weather conditions.
 
 ## Repository structure
 
