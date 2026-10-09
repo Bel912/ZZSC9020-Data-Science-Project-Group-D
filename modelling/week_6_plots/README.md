@@ -5,10 +5,10 @@
 From the repository root:
 
 ```bash
-python src/rerun_week_6.py
+python modelling/rerun_week_6.py
 ```
 
-The runner executes the existing code cells from `src/final_modelling.ipynb`, adjusting input data, dates, output location and test labels. The original notebook and Week 3/4 plots are unchanged. It uses the same OLS, tree and GAM settings, calendar controls, forecast features, baselines, plotting sizes and 150-dpi PNG format.
+The runner executes the existing code cells from `modelling/final_modelling.ipynb`, adjusting input data, dates, output location and test labels. The original notebook and Week 3/4 plots are unchanged. It uses the same OLS, tree and GAM settings, calendar controls, forecast features, baselines, plotting sizes and 150-dpi PNG format.
 
 ## Dates and evaluation
 

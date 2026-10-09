@@ -1,6 +1,6 @@
 """Rerun final_modelling.ipynb code with a fixed one-year train/test split.
 
-Run from the repository root: python src/rerun_week_6.py
+Run from the repository root: python modelling/rerun_week_6.py
 Original notebooks and plots are not modified. See week_6_plots/README.md.
 """
 import os
@@ -13,7 +13,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data' / 'NSW'
-DEST = ROOT / 'src' / 'week_6_plots'
+DEST = ROOT / 'modelling' / 'week_6_plots'
 DEST.mkdir(exist_ok=True)
 TRAIN_START = pd.Timestamp('2024-08-01')
 TEST_START = pd.Timestamp('2025-08-01')
@@ -54,12 +54,12 @@ def prepare_data():
 
 
 if __name__ == '__main__':
-    notebook = json.loads((ROOT / 'src' / 'final_modelling.ipynb').read_text())
+    notebook = json.loads((ROOT / 'modelling' / 'final_modelling.ipynb').read_text())
     namespace = {'__name__': '__main__', 'prepared_raw': prepare_data(), 'run_root': ROOT}
     replacements = {
         3: [
-            ("ROOT = Path.cwd().parent if Path.cwd().name == 'src' else Path.cwd()", 'ROOT = run_root'),
-            ("PLOTS = ROOT / 'src' / 'week_4_plots'", "PLOTS = ROOT / 'src' / 'week_6_plots'"),
+            ("ROOT = Path.cwd().parent if Path.cwd().name == 'modelling' else Path.cwd()", 'ROOT = run_root'),
+            ("PLOTS = ROOT / 'modelling' / 'week_4_plots'", "PLOTS = ROOT / 'modelling' / 'week_6_plots'"),
             ("raw = pd.read_csv(ROOT / 'data' / 'NSW1_Historical_Modelling_Dataset_Week3.csv', parse_dates=['DATETIME'])\nraw = raw.set_index('DATETIME').sort_index()", 'raw = prepared_raw.sort_index()'),
         ],
         7: [("folds = {'Spring': '2025-11-01', 'Summer': '2026-02-01',\n         'Autumn': '2026-05-01', 'Winter': '2026-07-01'}", "folds = {'Test year': '2025-08-01'}")],

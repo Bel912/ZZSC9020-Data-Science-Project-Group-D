@@ -12,5 +12,5 @@ ipython==9.17.1
 nbformat==5.11.1
 nbclient==0.11.0
 
-# Used by data/python script.py, not installed or run for this modelling pass.
+# Used by modelling/prepare_week_3_dataset_and_eda.py, not installed or run for this modelling pass.
 openpyxl

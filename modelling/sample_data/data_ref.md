@@ -1,8 +1,8 @@
 # Sample data reference
 
-`sample_data.csv` contains **synthetic data only**: 17,520 NSW1 half-hourly rows, from 1 January 2026 00:00 to 31 December 2026 23:30. It is for testing code and agreeing the input format, not drawing conclusions about NSW demand. The generator is `src/generate_sample_data.py`. From `src`, run `python generate_sample_data.py` to recreate the CSV. It always writes beside the script and overwrites the existing sample.
+`sample_data.csv` contains **synthetic data only**: 17,520 NSW1 half-hourly rows, from 1 January 2026 00:00 to 31 December 2026 23:30. It is for testing code and agreeing the input format, not drawing conclusions about NSW demand. The generator is `modelling/sample_data/generate_sample_data.py`. From the repository root, run `python modelling/sample_data/generate_sample_data.py` to recreate the CSV. It always writes beside the script and overwrites the existing sample.
 
-The seven existing field names follow `data/Data_Dictionary.xlsx`. Weather fields are proposed additions from `src/modelling_notes.md`.
+The seven existing field names follow `data/Data_Dictionary.xlsx`. Weather fields are proposed additions from `modelling/modelling_notes.md`.
 
 | Field | Meaning and sample generation |
 | --- | --- |
